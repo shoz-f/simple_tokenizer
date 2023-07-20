@@ -132,7 +132,7 @@ defmodule SimpleTokenizer do
       {index, id} ->
         {front, [_,_| rear]} = Enum.split(token, index)
         bpe_constructor(Enum.concat([front, [id], rear]), bpe_dic)
-  end
+    end
   end
 
   ## Searches for the smallest value in the list and returns that value and its first index.
